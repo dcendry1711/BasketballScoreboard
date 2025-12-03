@@ -69,3 +69,93 @@ button:hover {
     padding: .8em;
     cursor: pointer;
 }
+
+
+/*Media query*/
+
+/* Smartfony - do 600px */
+@media (max-width: 600px) {
+
+    .scoreboard {
+        width: 200px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+        padding: 0.2em 0.4em;
+    }
+
+    .result-section {
+        flex-direction: column;
+        gap: 1em;
+        padding-bottom: 1em;
+    }
+
+    .home-team,
+    .away-team {
+        gap: 1em;
+    }
+
+    button {
+        padding: 0.5em;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablety - od 601px do 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .scoreboard {
+        width: 80%;
+        height: auto;
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .result-section {
+        gap: 4em;
+        padding-bottom: 1em;
+    }
+
+    button {
+        padding: 0.6em;
+        font-size: 1rem;
+    }
+}
+
+/* Duże ekrany - powyżej 1025px */
+@media (min-width: 1025px) {
+    .scoreboard {
+        width: 575px;
+        height: 375px;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    p {
+        font-size: 4rem;
+    }
+
+    .result-section {
+        gap: 7em;
+    }
+
+    button {
+        padding: 0.6em;
+        font-size: 1rem;
+    }
+}
