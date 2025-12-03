@@ -77,9 +77,9 @@ button:hover {
 @media (max-width: 600px) {
 
     .scoreboard {
-        width: 250px;
+        width: 350px;
         margin: 0 auto;
-        height: 100vh;
+        height: fit-content;
     }
 
     h1 {
